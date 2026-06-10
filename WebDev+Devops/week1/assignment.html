@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Assigment 3</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: column;
+            align-content: center;
+            justify-content: center;
+
+        }
+
+        .head {
+            height: 20vh;
+            display: flex;
+            flex: 2;
+            border-bottom: 3px solid gray;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left {
+            margin-left: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .right {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+       .mainbody{
+        display : flex;
+        justify-content : space-between;
+        width : 90%;
+        align-items : center;
+        padding : 5%;
+        
+       }
+       .left1{
+        
+        flex : 1;
+       }
+        
+       .right1{
+       
+       display : flex;
+       justify-content : center;
+       align-items : center;
+        flex : 1;
+       }
+
+      .container{
+        margin : 10%;
+        display : flex;
+        flex-wrap : wrap;
+        gap : 2%;
+      }
+      .container > h2{
+        background-color :blue;
+        height : 10%;
+        padding : 20px;
+
+      }
+      .one{
+        width : 100%;
+        height : 10%;
+        border-top-right-radius : 30px;
+
+      }
+      .two,.three{
+        border-bottom-left-radius : 30px;
+      }
+        footer {
+            display: flex;
+            align-items : center;
+            
+
+        }
+        footer > h3 {
+            align-items : center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="left">
+            <h2> 100xDevs</h2>
+            <p> Home </p>
+            <p> Courses</p>
+        </div>
+        <div class="right">
+            <input type="search" placeholder="Type to search" />
+        </div>
+    </header>
+    <main>
+        <div class="mainbody">
+
+            <div class="left1">
+                <h1>Master Full Stack Development</h1>
+
+                <p> Master the fullstack development throught handls on open source projects join a community
+                    of developers transfroming their career with practical , real workd programming skills.
+                </p>
+
+                <button> learnmore</button>
+                <button> explore courses.</button>
+
+
+            </div>
+
+
+       
+                <div class="right1">
+                    <img src="pexels.jpg" height="300px" width="300px" border-radius="50%" />
+                </div>
+
+            
+            
+
+         </div>
+         <div class="container">
+                <h2 class="one"> this is a box</h2>
+                <h2 class="two"> job ready skills that master</h2>
+                <h2 class="three"> Personal mentoring</h2>
+            </div>
+        
+
+
+
+    </main>
+    <footer>
+        <h3> This is a website landing Page..</h3>
+    </footer>
+</body>
+
+</html>

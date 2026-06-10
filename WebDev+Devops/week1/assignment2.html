@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        header {
+            margin-left: 10%;
+            margin-right: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left {
+            display: flex;
+            justify-content: around;
+            gap: 10px;
+            align-items: center;
+        }
+
+        main {
+           display : flex;
+           flex-direction : column;
+           margin : 10%;
+           gap : 20%;
+        }
+
+        .upperbody{
+            display : flex;
+            gap : 10%;
+        }
+        .leftbody {
+            flex: 1;
+        }
+
+        .rightbody {
+            flex: 1;
+        }
+
+        .lowerbody{
+            display : flex;
+            flex-wrap : wrap;
+            gap : 10%;
+            align-items : stretch;
+        }
+        .lowerbody > h1{
+            background-color :darkgoldenrod;
+            padding : 10px;
+            border-radius : 2px;
+
+        }
+        #one{
+            display : flex;
+            justify-content : center;
+            width : 100%;
+            
+        }
+        #four{
+            display:flex;
+            flex-grow : 1;
+    
+        }
+        .footer{
+            margin : 10%;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <h3> 100xdevs</h3>
+            <p> Home</p>
+            <p> Courses</p>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="search here">
+        </div>
+
+    </header>
+    <hr>
+    <main>
+        <div class="upperbody">
+            <div class="leftbody">
+                <h2>Master Full stack Development</h2>
+                <p>Master the fullstack development throught handls on open source projects join a community of
+                    developers transfroming their career with practical , real workd programming skills.</p>
+                <div>
+                    <button>LearnMore..</button>
+                    <button>Explore Courses</button>
+                </div>
+            </div>
+
+            <div class="rightbody">
+                <img alt="SunflowerImage" heigh="40%" width="40%" src="pexels.jpg">
+                <p> This is a sunflower..</p>
+            </div>
+        </div>
+
+
+        <div class="lowerbody">
+            <h1 id="one">BOX</h1>
+            <h1>BOX</h1>
+            <h1>BOX</h1>
+            <h1 id="four">BOX</h1>
+            <h1>BOX</h1>
+            <h1>BOX</h1>
+            <h1>BOX</h1>
+            <h1>BOX</h1>
+            <h1>BOX</h1>
+        </div>
+
+        
+    </main>
+
+    <footer class="footer">
+        <h2> This is the end of the page.</h2>
+    </footer>
+
+</body>
+
+</html>
