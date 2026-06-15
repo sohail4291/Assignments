@@ -56,22 +56,32 @@ function addItem(){
     }
     const newDiv = document.createElement("div");
     newDiv.setAttribute("id",index);
+    newDiv.classList.add("newDiv");
+
     const todoSpan = document.createElement("span");
     todoSpan.innerHTML = data;
     todoSpan.setAttribute("id","span"+index);
+    todoSpan.classList.add("text");
+
 
     const deleteButton = document.createElement("button");
     deleteButton.innerHTML = "delete item";
     deleteButton.setAttribute("onclick","deleteItem("+index+")");
+    deleteButton.classList.add("delete-btn")
 
     const editButton = document.createElement("button");
     editButton.innerHTML = "edit button";
     editButton.setAttribute("onclick","editItem("+index+")");
+    editButton.classList.add("edit-btn")
+
+    const buttonContainer = document.createElement("div");
+    buttonContainer.appendChild(deleteButton);
+    buttonContainer.appendChild(editButton);
+    buttonContainer.classList.add("button-container")
 
     newDiv.appendChild(todoSpan);
-    newDiv.appendChild(deleteButton);
-    newDiv.appendChild(editButton);
-    
+    newDiv.appendChild(buttonContainer);
+   
     const parentDiv = document.getElementById("todo");
     parentDiv.appendChild(newDiv);
 

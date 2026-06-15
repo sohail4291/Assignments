@@ -1,0 +1,73 @@
+body{
+    background-color : #fffcf2;
+    display : flex;
+    justify-content : center;
+    
+}
+.body-input{
+    justify-content : center;
+}
+#input{
+    background-color :antiquewhite;
+    height : 30px;
+    width : 160px;
+    border : 3px solid #403d39;
+    border-radius : 4px;
+}
+#input:hover{
+    background-color  :#fffcf2;
+}
+#button{
+    background-color :antiquewhite;
+    height : 30px;
+    width : 60px;
+    border : 3px solid #403d39;
+    border-radius : 4px;
+}
+#button:hover{
+    background-color  :#fffcf2;
+}
+
+#todo{
+    margin : 3%;
+    display : flex;
+    flex-wrap : wrap;
+    row-gap : 5px;
+}
+
+.newDiv{
+    display : flex;
+    flex-direction : column;
+    margin : 3%;
+    border : 3px solid #babd8d;
+    padding : 2%;
+    border-radius : 5px;
+}
+.newDiv:hover{
+    background-color:bisque;
+}
+.buttonContainer{
+    display : flex;
+    justify-content : center;
+}
+
+.text{
+    text-align : center;
+    font-weight : bold;
+}
+.delete-btn{
+    margin : 4%;
+    border : 3px solid #84a98c;
+    background-color :#97d7a5;
+}
+.delete-btn:hover{
+    background-color  :#fffcf2;
+}
+.edit-btn{
+    margin : 4%;
+    border : 3px solid #84a98c;
+    background-color :#97d7a5;
+}
+.edit-btn:hover{
+    background-color  :#fffcf2;
+}

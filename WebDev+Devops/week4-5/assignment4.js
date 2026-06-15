@@ -229,9 +229,55 @@
 // .then(data => console.log(data));
 
 
-fetch("https://jsonplaceholder.typicode.com/users",{
-    method : "GET",
+// fetch("https://jsonplaceholder.typicode.com/users",{
+//     method : "GET",
    
-})
-.then(response => response.json())
-.then(data => console.log(data));
+// })
+// .then(response => response.json())
+// .then(data => console.log(data));
+
+
+
+////
+// const fs = require("fs");
+// function main(file){
+//     // count words
+    
+//     const read = fs.readFile(file,"utf-8",(err,data)=>{
+//         if(err){
+//             throw new Error("error in reading");
+//         }
+        
+
+//          const count = data.split("\n")
+//             .map(line => line.trim())
+//             .filter(line => line !== "")
+//             .join("\n");
+    
+//         const length = count.split(" ").length;
+//         console.log(length);
+//     })
+   
+    
+// }
+
+// main("a.txt");
+
+
+/// thenable function
+
+// const obj = {
+//     then(resolve){
+//         resolve("hello world");
+//     }
+// }
+
+// // obj.then((data) => console.log(data));
+// Promise.resolve(obj).then(i => console.log(i));
+
+
+// const obj = {
+//     then: "hello"
+// };
+
+// Promise.resolve(obj).then(console.log);
